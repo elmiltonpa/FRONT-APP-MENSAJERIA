@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const URL = import.meta.env.VITE_API_URL;
+const URL = 'https://back-app-mensajeria.onrender.com/';
 
 const socket = io(URL, {
     withCredentials: true,
