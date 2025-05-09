@@ -52,6 +52,7 @@ const loginUser = async (e) => {
                         prepend-inner-icon="mdi-account"
                         :error-messages="errors.username"
                         @input="errors.username = ''"
+                        autocomplete="off"
                     ></v-text-field>
 
                     <v-text-field
@@ -64,6 +65,7 @@ const loginUser = async (e) => {
                         @click:append-inner="showPassword = !showPassword"
                         :error-messages="errors.password"
                         @input="errors.password = ''"
+
                     ></v-text-field>
 
                     <v-btn
